@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'state_learn_view_model.dart';
+
+class StateManageLearnView extends StatefulWidget {
+  const StateManageLearnView({Key? key}) : super(key: key);
+
+  @override
+  State<StateManageLearnView> createState() => _StateManageLearnViewState();
+}
+
+// normally, the following class extends State<StateManageLearnView>
+// but we add State<StateManageLearnView> to StateLearnViewModel in state_learn_view_model.dart
+// so we can extend StateLearnViewModel in here
+class _StateManageLearnViewState extends StateLearnViewModel {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          changeVisible();
+        },
+      ),
+      appBar: AppBar(
+        backgroundColor: isOpacity ? Colors.red : Colors.green,
+        shadowColor: isVisible ? Colors.amber : Colors.grey,
+      ),
+    );
+  }
+}
