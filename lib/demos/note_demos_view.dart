@@ -6,7 +6,7 @@ class NoteDemos extends StatelessWidget {
   const NoteDemos({Key? key}) : super(key: key);
   final _title = 'my note for you';
   final _description =
-      "my first note is that i love you so much and i'm so thankful for having you, thank god. but i wonder if you don't love today. i think you don't. do you ?";
+      "my first note is that i love you so much and i'm so thankful for having you, thank god. but i wonder if you don't love me today. i think you don't. do you ?";
   final _createNote = 'Click if you love me today';
   final _importNotes = "no, i don't because i'm abbah tubuke";
   @override
