@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'demos/note_demos_view.dart';
+import '202/animated_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
       //       // systemOverlayStyle: SystemUiOverlayStyle.light,
       //       elevation: 0,
       //     )),
-      home: NoteDemos(),
+      home: AnimatedLearnView(),
     );
   }
 }

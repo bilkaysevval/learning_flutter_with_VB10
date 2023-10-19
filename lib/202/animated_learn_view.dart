@@ -133,6 +133,7 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView>
 
 //we can write this extension for not rewriting Theme.of(context).blablaa each time.
 // in this way we can create our theme and use it in anywhere. you dont have to copy it each time
+// most importantly; we can reach to the 'context'
 extension BuildContextExtension on BuildContext {
   TextTheme textTheme() {
     return Theme.of(this).textTheme;
